@@ -4,7 +4,7 @@ import { getMenu } from "../../services/apiRestaurant";
 
 function Menu() {
  const menu = useLoaderData();
- console.log(menu);
+ 
 
   return (<ul>
 
