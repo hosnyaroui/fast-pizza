@@ -4,7 +4,7 @@ import Home from "./user interface/Home";
 import Error from "./user interface/Error";
 import Menu, { loader, loader as menuLoader} from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
-import CreateOrder from "./features/order/CreateOrder";
+import CreateOrder, { action as CreateOrderAction } from "./features/order/CreateOrder";
 import Order, {loader as orderLoader} from "./features/order/Order";
 import AppLayout from "./user interface/AppLayout";
 
@@ -28,7 +28,9 @@ children: [
   {
     path: '/cart', element: <Cart />
   },
-  { path: '/order/new', element: <CreateOrder />},
+  { path: '/order/new', element: <CreateOrder />,
+action: CreateOrderAction,
+},
   { path: '/order/:orderId', element: <Order />,
 loader: orderLoader,
 errorElement: <Error />,
