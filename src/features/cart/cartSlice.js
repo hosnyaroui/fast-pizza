@@ -51,6 +51,8 @@ reducers: {
 export const {addItem, deleteItem, increaseItemQuantity, decreaseItemQuantity, clearCart} = cartSlice.actions;
 export default cartSlice.reducer;
 
+
+
 export const getCart = (state) => state.cart.cart;
 
 export const getTotalCartQuantity = (state) =>
