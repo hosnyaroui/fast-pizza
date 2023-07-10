@@ -6,6 +6,7 @@ import Menu, { loader, loader as menuLoader} from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
 import CreateOrder, { action as CreateOrderAction } from "./features/order/CreateOrder";
 import Order, {loader as orderLoader} from "./features/order/Order";
+import {action as updateOrderAction} from './features/order/UpdateOrder';
 import AppLayout from "./user interface/AppLayout";
 
 
@@ -35,6 +36,7 @@ action: CreateOrderAction,
   { path: '/order/:orderId', element: <Order />,
 loader: orderLoader,
 errorElement: <Error />,
+action: updateOrderAction,
 }, 
 ],
   }

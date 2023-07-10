@@ -9,6 +9,7 @@ import {
   formatDate,
 } from "../../utils/helpers";
 import { useEffect } from "react";
+import UpdateOrder from "./UpdateOrder";
 
 
 
@@ -68,6 +69,10 @@ if (!fetcher.data && fetcher.state === 'idle') fetcher.load('/menu');
         {priority && <p>Price priority: {formatCurrency(priorityPrice)}</p>}
         <p className="font-bold">To pay on delivery: {formatCurrency(orderPrice + priorityPrice)}</p>
       </div>
+
+
+{!priority && <UpdateOrder order={order}/>}
+
     </div>
   );
 }
