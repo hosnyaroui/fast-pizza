@@ -1,4 +1,5 @@
 Fast PIzza with React Redux TailwindCss
+Demo: https://pizza-fast.netlify.app/
 ![fastpizza1](https://github.com/hosnyaroui/fast-pizza/assets/91914423/010e45dc-8517-47e8-96f8-76a5f20c3510)
 ![fastpizza2](https://github.com/hosnyaroui/fast-pizza/assets/91914423/11b5f922-b174-4bdc-9acd-fc04be165685)
 ![fastpizza3](https://github.com/hosnyaroui/fast-pizza/assets/91914423/3105afd3-7363-4dae-8a02-4e64b707d4e5)
